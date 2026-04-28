@@ -54,11 +54,11 @@ skill_Pro/
 We recommend **Python 3.10**. Run the following in Anaconda Prompt or PowerShell:
 
 ```powershell
-git clone https://github.com/<your-org>/skill_Pro.git
-cd skill_Pro
+git clone https://github.com/<your-org>/Skill_Pro.git
+cd Skill_Pro
 
-conda create -n skillmdp python=3.10 -y
-conda activate skillmdp
+conda create -n Skillmdp python=3.10 -y
+conda activate Skillmdp
 
 pip install -r requirements.txt
 ```
