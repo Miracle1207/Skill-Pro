@@ -1,0 +1,10 @@
+numpy>=1.24,<2.0
+pyyaml>=6.0
+torch>=2.1,<2.5
+transformers>=4.40,<5.0
+vllm>=0.4.2
+sentence-transformers>=2.6.0-
+swanlab>=0.3.0
+textarena>=0.4.0
+alfworld>=0.3.5
+matplotlib>=3.7
