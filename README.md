@@ -27,7 +27,7 @@ On top of a vanilla LLM-Agent decision loop, it introduces an evolvable **Skill 
 ## Project Structure
 
 ```
-ProcMEM/
+skill_Pro/
 ├── main.py                  # Entry point: parses CLI args and launches SkillMDP
 ├── run.py                   # Core training / evaluation loop (SkillMDP)
 ├── data_structures.py       # Skill / Experience dataclasses
@@ -54,11 +54,11 @@ ProcMEM/
 We recommend **Python 3.10**. Run the following in Anaconda Prompt or PowerShell:
 
 ```powershell
-git clone https://github.com/<your-org>/ProcMEM.git
-cd ProcMEM
+git clone https://github.com/<your-org>/skill_Pro.git
+cd skill_Pro
 
-conda create -n procmem python=3.10 -y
-conda activate procmem
+conda create -n skillmdp python=3.10 -y
+conda activate skillmdp
 
 pip install -r requirements.txt
 ```
