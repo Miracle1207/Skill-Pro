@@ -5,7 +5,7 @@
 
 This is the official implementation of the paper
 **[Skill-Pro: Learning Reusable Skills from Experience via Non-Parametric PPO for LLM Agents](https://arxiv.org/abs/2602.01869)**
-(Qirui Mi, Zhijian Ma, Mengyue Yang, Haoxuan Li, Yisen Wang, Haifeng Zhang, Jun Wang).
+(Qirui Mi, Zhijian Ma, Mengyue Yang, Haoxuan Li, Yisen Wang, Haifeng Zhang, Jun Wang), accepted as a **Spotlight** at **ICML 2026**.
 
 `Skill-Pro` is a **Skill-augmented Markov Decision Process (Skill-MDP, SMDP)** framework for **LLM Agents**.
 On top of a vanilla LLM-Agent decision loop, it introduces an evolvable **Skill Pool**, where each skill is described by a three-part *Initiation / Policy / Termination* schema, similar to the classical Options framework. At every step, the agent first selects an appropriate skill and injects it into the prompt, then lets the LLM produce an action. In parallel, a **Skill Evolution** module continuously generates, refines, and prunes skills based on interaction experience via **Non-Parametric PPO** (semantic-gradient candidate generation + a PPO Gate for verification), enabling online evolution of the agent's capabilities **without any parameter updates**.
@@ -201,15 +201,16 @@ state ─►  build_decision_prompt() ─►  LLM Policy ─► action ─► En
 
 ## Citation
 
-If you find this work useful, please consider citing our paper:
+If you find this work useful, please consider citing our ICML Spotlight paper:
 
 ```bibtex
-@article{mi2026skillpro,
-  title   = {Skill-Pro: Learning Reusable Skills from Experience via Non-Parametric PPO for LLM Agents},
-  author  = {Mi, Qirui and Ma, Zhijian and Yang, Mengyue and Li, Haoxuan and Wang, Yisen and Zhang, Haifeng and Wang, Jun},
-  journal = {arXiv preprint arXiv:2602.01869},
-  year    = {2026},
-  url     = {https://arxiv.org/abs/2602.01869}
+@inproceedings{mi2026skillpro,
+  title     = {Skill-Pro: Learning Reusable Skills from Experience via Non-Parametric PPO for LLM Agents},
+  author    = {Mi, Qirui and Ma, Zhijian and Yang, Mengyue and Li, Haoxuan and Wang, Yisen and Zhang, Haifeng and Wang, Jun},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML 2026)},
+  year      = {2026},
+  note      = {Spotlight},
+  url       = {https://arxiv.org/abs/2602.01869}
 }
 ```
 
